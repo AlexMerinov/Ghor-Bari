@@ -1,0 +1,21 @@
+.main {
+   &__property {
+      margin-bottom: 120px;
+   }
+}
+
+.property {
+   background-color: $main-bg;
+   text-align: center;
+
+   &__card {
+      margin-bottom: 20px;
+   }
+
+
+   .link {
+      &--geo {
+         text-align: center;
+      }
+   }
+}

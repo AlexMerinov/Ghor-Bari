@@ -1,0 +1,60 @@
+.form {
+   padding: 32px;
+   background-color: #fff;
+   &__title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: $title;
+      margin-bottom: 28px;
+      position: relative;
+      &:after {
+         content: '';
+         display: block;
+         width: 43px;
+         height: 4px;
+         background-color: $primary;
+         position: absolute;
+         left: 0;
+         bottom: -4px;
+      }
+   }
+
+   &__wrapper {
+      display: flex;
+      align-items: flex-end;
+      gap: 8px;
+   }
+
+   &__list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1 1 auto;
+   }
+
+   &__field {
+      flex: 1 1 auto;
+      label {
+         display: block;
+         margin-bottom: 4px;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 28px;
+         color: $text;
+      }
+   }
+
+   &__select {
+      width: 100%;
+      padding: 13px 10px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $text-second;
+      background-color: #fff;
+      border: 1px solid $decor;
+      border-radius: 2px;
+      cursor: pointer;
+   }
+}

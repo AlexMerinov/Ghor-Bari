@@ -1,0 +1,73 @@
+.agent {
+   &__item {
+      margin-bottom: 20px;
+   }
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card-agent {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 48px;
+
+   border: 1px solid $decor;
+   border-radius: 4px;
+
+   transition: border 0.2s ease;
+   &:hover {
+      border: 1px solid $primary;
+   }
+
+   &__photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 24px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__name {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: $title;
+      margin-bottom: 4px;
+      text-align: center;
+   }
+
+   &__desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $text-second;
+      margin-bottom: 8px;
+   }
+
+   .social {
+      display: flex;
+      align-items: center;
+      .icon {
+         margin: 0 10px;
+         fill: $title;
+         width: 16px;
+         height: 18px;
+         transition: fill 0.2s ease-in-out;
+      }
+      &__link {
+         .icon {
+            &:hover {
+               fill: $primary;
+            }
+         }
+      }
+   }
+}
