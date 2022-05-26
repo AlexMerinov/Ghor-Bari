@@ -1,6 +1,5 @@
 body {
    font-family: 'Roboto', sans-serif;
-   background-color: $main-bg;
 }
 
 body.lock {
@@ -67,6 +66,7 @@ body.lock {
       align-items: center;
       justify-content: center;
       padding: 16px 32px;
+      margin-top: 50px;
 
       font-weight: 500;
       font-size: 18px;
@@ -141,6 +141,10 @@ body.lock {
    margin-left: auto;
    &--white {
       color: #fff;
+   }
+   &--left {
+      margin-left: 0;
+      text-align: left;
    }
 }
 
