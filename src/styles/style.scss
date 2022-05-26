@@ -123,6 +123,10 @@ body.lock {
       }
 
    }
+
+   &--white {
+      color: #fff;
+   }
 }
 
 .subtitle {
@@ -135,6 +139,9 @@ body.lock {
    margin-bottom: 60px;
    margin-right: auto;
    margin-left: auto;
+   &--white {
+      color: #fff;
+   }
 }
 
 
