@@ -1,0 +1,717 @@
+@@include('includes/header.html', { 'title' : 'New Project' })
+
+<!-- Page -->
+<div class="page">
+  <div class="page__archive archive">
+    <!-- Header -->
+    <div class="page__header header">
+      <div class="header-top"></div>
+      <div class="header-bootm">
+        <div class="container">
+          <div class="header-bottom__wrapper">
+            <a href="#" class="header-bottom__logo">
+              <img src="images/Logo.png" alt="no-logo" />
+            </a>
+            <nav class="header-bottom__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="details.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                  <a href="archive.html" class="nav__link">Property</a>
+                </li>
+                <li class="nav__item">
+                  <a href="agents.html" class="nav__link">Agents</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Pages</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Contact Us</a>
+                </li>
+              </ul>
+              <button class="burger">
+                <div class="burger__wrapper">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Header -->
+
+    <!-- Main -->
+    <main class="page__block archive">
+      <section
+        class="archive__block dream dream--secondary"
+        style="background: url(images/Property_bg.jpg) center / cover no-repeat"
+      >
+        <div class="container">
+          <div class="dream__wrapper">
+            <h1 class="title title--main">Property Listing</h1>
+          </div>
+        </div>
+      </section>
+
+      <div class="search">
+        <div class="container">
+          <form class="form search__form">
+            <h5 class="form__title">Search Your Properties</h5>
+            <div class="form__wrapper">
+              <div class="form__list row row-cols-lg-3">
+                <div class="form__field col">
+                  <label for="type">Looking For</label>
+                  <select name="type" id="type" class="form__select">
+                    <option disabled>Property Type</option>
+                    <option>Property Type</option>
+                    <option>Property Type</option>
+                    <option>Property Type</option>
+                  </select>
+                </div>
+                <div class="form__field col">
+                  <label for="size">Property Size</label>
+                  <select name="type" id="size" class="form__select">
+                    <option disabled>Type Location</option>
+                    <option>Property Type</option>
+                    <option>Property Type</option>
+                    <option>Property Type</option>
+                  </select>
+                </div>
+                <div class="form__field col">
+                  <label for="location">Property Location</label>
+                  <select name="type" id="location" class="form__select">
+                    <option disabled>Property Type</option>
+                    <option>Property Type</option>
+                    <option>Property Type</option>
+                    <option>Property Type</option>
+                  </select>
+                </div>
+                <div class="form__field col">
+                  <label for="location">Property Price</label>
+                  <select name="type" id="location" class="form__select">
+                    <option disabled>Price</option>
+                    <option>Property Price</option>
+                    <option>Property Price</option>
+                    <option>Property Price</option>
+                  </select>
+                </div>
+                <div class="form__field col">
+                  <label for="location">Property Location</label>
+                  <select name="type" id="location" class="form__select">
+                    <option disabled>Bed</option>
+                    <option>Property Type</option>
+                    <option>Property Type</option>
+                    <option>Property Type</option>
+                  </select>
+                </div>
+                <div class="form__field col">
+                  <label for="location">Totat Bath</label>
+                  <select name="type" id="location" class="form__select">
+                    <option disabled>Bath</option>
+                    <option>Totat Bath</option>
+                    <option>Totat Bath</option>
+                    <option>Totat Bath</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn btn--form">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="archive__block card-block">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <div class="property__card card-house">
+                <div class="card-house__picture">
+                  <img src="images/house/aportment_1.jpg" alt="no-image" />
+                  <div class="card-house__label">$32000</div>
+                </div>
+                <div class="card-house__content">
+                  <a href="#" class="card-house__title"
+                    >Bravo Apollo Apartments</a
+                  >
+                  <p class="card-house__desc">
+                    There are many variations of passages of lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form injected.
+                  </p>
+                  <div href="#" class="card-house__pin">
+                    <svg class="icon icon--time">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#pin"></use>
+                    </svg>
+                    <span>779 6th Ave New York, NY 120400</span>
+                  </div>
+                  <ul class="card-house__option">
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bed"></use>
+                      </svg>
+                      <span>4 Bed</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bath"></use>
+                      </svg>
+                      <span>3 Bath</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use
+                          xlink:href="svg-sprite/svg-sprite.svg#living-room"
+                        ></use>
+                      </svg>
+                      <span>8 Rooms</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#size"></use>
+                      </svg>
+                      <span>1574 sq</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card-house__like">
+                  <svg class="like">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="property__card card-house">
+                <div class="card-house__picture">
+                  <img src="images/house/aportment_2.png" alt="no-image" />
+                  <div class="card-house__label">$32000</div>
+                </div>
+                <div class="card-house__content">
+                  <a href="#" class="card-house__title"
+                    >Bravo Apollo Apartments</a
+                  >
+                  <p class="card-house__desc">
+                    There are many variations of passages of lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form injected.
+                  </p>
+                  <div href="#" class="card-house__pin">
+                    <svg class="icon icon--time">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#pin"></use>
+                    </svg>
+                    <span>779 6th Ave New York, NY 120400</span>
+                  </div>
+                  <ul class="card-house__option">
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bed"></use>
+                      </svg>
+                      <span>4 Bed</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bath"></use>
+                      </svg>
+                      <span>3 Bath</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use
+                          xlink:href="svg-sprite/svg-sprite.svg#living-room"
+                        ></use>
+                      </svg>
+                      <span>8 Rooms</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#size"></use>
+                      </svg>
+                      <span>1574 sq</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card-house__like">
+                  <svg class="like like--fill">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="property__card card-house">
+                <div class="card-house__picture">
+                  <img src="images/house/aportments_3.png" alt="no-image" />
+                  <div class="card-house__label">$32000</div>
+                </div>
+                <div class="card-house__content">
+                  <a href="#" class="card-house__title"
+                    >Bravo Apollo Apartments</a
+                  >
+                  <p class="card-house__desc">
+                    There are many variations of passages of lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form injected.
+                  </p>
+                  <div href="#" class="card-house__pin">
+                    <svg class="icon icon--time">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#pin"></use>
+                    </svg>
+                    <span>779 6th Ave New York, NY 120400</span>
+                  </div>
+                  <ul class="card-house__option">
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bed"></use>
+                      </svg>
+                      <span>4 Bed</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bath"></use>
+                      </svg>
+                      <span>3 Bath</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use
+                          xlink:href="svg-sprite/svg-sprite.svg#living-room"
+                        ></use>
+                      </svg>
+                      <span>8 Rooms</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#size"></use>
+                      </svg>
+                      <span>1574 sq</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card-house__like">
+                  <svg class="like">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="property__card card-house">
+                <div class="card-house__picture">
+                  <img src="images/house/aportment_4.jpg" alt="no-image" />
+                  <div class="card-house__label">$32000</div>
+                </div>
+                <div class="card-house__content">
+                  <a href="#" class="card-house__title"
+                    >Bravo Apollo Apartments</a
+                  >
+                  <p class="card-house__desc">
+                    There are many variations of passages of lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form injected.
+                  </p>
+                  <div href="#" class="card-house__pin">
+                    <svg class="icon icon--time">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#pin"></use>
+                    </svg>
+                    <span>779 6th Ave New York, NY 120400</span>
+                  </div>
+                  <ul class="card-house__option">
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bed"></use>
+                      </svg>
+                      <span>4 Bed</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bath"></use>
+                      </svg>
+                      <span>3 Bath</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use
+                          xlink:href="svg-sprite/svg-sprite.svg#living-room"
+                        ></use>
+                      </svg>
+                      <span>8 Rooms</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#size"></use>
+                      </svg>
+                      <span>1574 sq</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card-house__like">
+                  <svg class="like">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="property__card card-house">
+                <div class="card-house__picture">
+                  <img src="images/house/house_5.png" alt="no-image" />
+                  <div class="card-house__label">$32000</div>
+                </div>
+                <div class="card-house__content">
+                  <a href="#" class="card-house__title"
+                    >Bravo Apollo Apartments</a
+                  >
+                  <p class="card-house__desc">
+                    There are many variations of passages of lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form injected.
+                  </p>
+                  <div href="#" class="card-house__pin">
+                    <svg class="icon icon--time">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#pin"></use>
+                    </svg>
+                    <span>779 6th Ave New York, NY 120400</span>
+                  </div>
+                  <ul class="card-house__option">
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bed"></use>
+                      </svg>
+                      <span>4 Bed</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bath"></use>
+                      </svg>
+                      <span>3 Bath</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use
+                          xlink:href="svg-sprite/svg-sprite.svg#living-room"
+                        ></use>
+                      </svg>
+                      <span>8 Rooms</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#size"></use>
+                      </svg>
+                      <span>1574 sq</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card-house__like">
+                  <svg class="like like--fill">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="property__card card-house">
+                <div class="card-house__picture">
+                  <img src="images/house/house_7.png" alt="no-image" />
+                  <div class="card-house__label">$32000</div>
+                </div>
+                <div class="card-house__content">
+                  <a href="#" class="card-house__title"
+                    >Bravo Apollo Apartments</a
+                  >
+                  <p class="card-house__desc">
+                    There are many variations of passages of lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form injected.
+                  </p>
+                  <div href="#" class="card-house__pin">
+                    <svg class="icon icon--time">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#pin"></use>
+                    </svg>
+                    <span>779 6th Ave New York, NY 120400</span>
+                  </div>
+                  <ul class="card-house__option">
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bed"></use>
+                      </svg>
+                      <span>4 Bed</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bath"></use>
+                      </svg>
+                      <span>3 Bath</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use
+                          xlink:href="svg-sprite/svg-sprite.svg#living-room"
+                        ></use>
+                      </svg>
+                      <span>8 Rooms</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#size"></use>
+                      </svg>
+                      <span>1574 sq</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card-house__like">
+                  <svg class="like">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="property__card card-house">
+                <div class="card-house__picture">
+                  <img src="images/house/house_7.png" alt="no-image" />
+                  <div class="card-house__label">$32000</div>
+                </div>
+                <div class="card-house__content">
+                  <a href="#" class="card-house__title"
+                    >Bravo Apollo Apartments</a
+                  >
+                  <p class="card-house__desc">
+                    There are many variations of passages of lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form injected.
+                  </p>
+                  <div href="#" class="card-house__pin">
+                    <svg class="icon icon--time">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#pin"></use>
+                    </svg>
+                    <span>779 6th Ave New York, NY 120400</span>
+                  </div>
+                  <ul class="card-house__option">
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bed"></use>
+                      </svg>
+                      <span>4 Bed</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bath"></use>
+                      </svg>
+                      <span>3 Bath</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use
+                          xlink:href="svg-sprite/svg-sprite.svg#living-room"
+                        ></use>
+                      </svg>
+                      <span>8 Rooms</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#size"></use>
+                      </svg>
+                      <span>1574 sq</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card-house__like">
+                  <svg class="like">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="property__card card-house">
+                <div class="card-house__picture">
+                  <img src="images/house/house_8.png" alt="no-image" />
+                  <div class="card-house__label">$32000</div>
+                </div>
+                <div class="card-house__content">
+                  <a href="#" class="card-house__title"
+                    >Bravo Apollo Apartments</a
+                  >
+                  <p class="card-house__desc">
+                    There are many variations of passages of lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form injected.
+                  </p>
+                  <div href="#" class="card-house__pin">
+                    <svg class="icon icon--time">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#pin"></use>
+                    </svg>
+                    <span>779 6th Ave New York, NY 120400</span>
+                  </div>
+                  <ul class="card-house__option">
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bed"></use>
+                      </svg>
+                      <span>4 Bed</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#bath"></use>
+                      </svg>
+                      <span>3 Bath</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use
+                          xlink:href="svg-sprite/svg-sprite.svg#living-room"
+                        ></use>
+                      </svg>
+                      <span>8 Rooms</span>
+                    </li>
+                    <li class="card-house__item">
+                      <svg class="icon icon--time">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#size"></use>
+                      </svg>
+                      <span>1574 sq</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card-house__like">
+                  <svg class="like">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-pagination">
+            <button class="card-pagination__btn card-pagination__btn--prev">
+              <svg class="icon icon--time">
+                <use xlink:href="svg-sprite/svg-sprite.svg#prev"></use>
+              </svg>
+            </button>
+            <ul class="card-pagination__list">
+              <li class="card-pagination__item">
+                <a
+                  href="#"
+                  class="card-pagination__link card-pagination__link--active"
+                  >1</a
+                >
+              </li>
+              <li class="card-pagination__item">
+                <a href="#" class="card-pagination__link">2</a>
+              </li>
+              <li class="card-pagination__item">
+                <a href="#" class="card-pagination__link">3</a>
+              </li>
+              <li class="card-pagination__item">
+                <a href="#" class="card-pagination__link">4</a>
+              </li>
+            </ul>
+            <button class="card-pagination__btn card-pagination__btn--next">
+              <svg class="icon icon--time">
+                <use xlink:href="svg-sprite/svg-sprite.svg#next"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- / Main -->
+
+    <!-- Footer -->
+    <div class="archive__footer footer">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 footer__top">
+          <div class="col columns">
+            <a href="#" class="footer__logo">
+              <svg class="icon">
+                <use xlink:href="svg-sprite/svg-sprite.svg#Logo"></use>
+              </svg>
+            </a>
+            <p class="footer__text text">
+              There are many variations of passages Lorem Ipsum available, but
+              the majority is have suffered alteration.
+            </p>
+            <span class="footer__business">Business Hour</span>
+            <span class="footer__text text"
+              >Monday - Friday 10:00am - 06:00pm</span
+            >
+          </div>
+          <nav class="col columns">
+            <div class="columns__title">Important Links</div>
+            <div class="columns__wrapper">
+              <ul class="footer__nav footer-nav-list">
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Our Services</a>
+                </li>
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Privacy</a>
+                </li>
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Contacts</a>
+                </li>
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Meet Our Team</a>
+                </li>
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Help Desk</a>
+                </li>
+              </ul>
+              <ul class="footer__nav footer-nav-list">
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Our Services</a>
+                </li>
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Privacy</a>
+                </li>
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Contacts</a>
+                </li>
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Meet Our Team</a>
+                </li>
+                <li class="footer-nav-list__item">
+                  <a href="#" class="footer-nav-list__link">Help Desk</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="col columns">
+            <div class="columns__title">Follow Instagram</div>
+            <div class="columns__block">
+              <div class="columns__item">
+                <img src="images/footer/footer-card_1.png" alt="no-image" />
+              </div>
+              <div class="columns__item">
+                <img src="images/footer/footer-card_2.png" alt="no-image" />
+              </div>
+              <div class="columns__item">
+                <img src="images/footer/footer-card_3.png" alt="no-image" />
+              </div>
+              <div class="columns__item">
+                <img src="images/footer/footer-card_4.png" alt="no-image" />
+              </div>
+              <div class="columns__item">
+                <img src="images/footer/footer-card_5.png" alt="no-image" />
+              </div>
+              <div class="columns__item">
+                <img src="images/footer/footer-card_6.png" alt="no-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>All Right Reserve By Jit Banik 2020</span>
+        </div>
+      </div>
+    </div>
+    <!-- / Footer -->
+  </div>
+</div>
+<!-- / Page -->
+
+@@include('includes/footer.html')

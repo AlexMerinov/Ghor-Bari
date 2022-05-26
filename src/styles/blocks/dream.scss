@@ -20,6 +20,18 @@
       opacity: 0.5;
    }
 
+   &--secondary {
+      padding: 127px 0;
+      &::after {
+         background-color: $heading;
+         opacity: 0.9;
+      }
+
+      .title {
+         margin-bottom: 16px;
+      }
+   }
+
    &__wrapper {
       position: relative;
       z-index: 10;
