@@ -1,0 +1,27 @@
+.agent {
+   &__grid {
+      margin-bottom: 120px;
+
+      .card-agent {
+         &:hover {
+            border: 1px solid $secondary;
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+.grid {
+   &__wrapper {
+      margin-bottom: 60px;
+   }
+}
+
+.grid__wrapper > * + * + * + * {
+   margin-top: 20px;
+} 
+
+.card-pagination {
+   margin-right: auto;
+   margin-left: auto;
+}
