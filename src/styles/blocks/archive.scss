@@ -2,6 +2,34 @@
    &__block {
       margin-bottom: 120px;
    }
+
+   .nav {
+      &__link {
+         &:hover {
+            color: $secondary;
+         }
+      }
+
+      &__list {
+         background-color: $secondary;
+         @media screen and (min-width:1200px) {
+            background-color: transparent;
+         }
+      }
+   }
+
+   .burger {
+      background-color: $secondary;
+   }
+
+   .form {
+      &__select {
+         &:hover {
+            border: 1px solid $secondary;
+         }
+      }
+   }
+ 
 }
 
 

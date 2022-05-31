@@ -56,5 +56,10 @@
       border: 1px solid $decor;
       border-radius: 2px;
       cursor: pointer;
+      transition: border 0.2s ease-in-out;
+
+      &:hover {
+         border: 1px solid $primary;
+      }
    }
 }
