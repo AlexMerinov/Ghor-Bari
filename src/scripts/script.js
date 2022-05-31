@@ -25,7 +25,25 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 
 
- //-----------Accordion-header----------------------------------->
+ //-----------Accordion-footer----------------------------------->
+ if (document.body.clientWidth < 768) {
+   const contactsItems = Array.from(document.querySelectorAll('.contacts__item'));
 
+   contactsItems.forEach((contactsItem) => {
+      contactsItem.addEventListener('click', contactOpen);
+   });
+
+   function contactOpen(e) {
+      e.preventDefault();
+      let currentContact = e.target.closest('.contacts__item');
+      let currentLink = e.target.nextElementSibling;
+      currentContact.classList.toggle('contacts__item--active');
+      if (currentContact.classList.contains('contacts__item--active')) {
+         currentLink.style.maxHeight = currentLink.scrollHeight + "px";
+      } else {
+         currentLink.style.maxHeight = 0;
+      }
+   }
+}
 
 });
