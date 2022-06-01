@@ -5,6 +5,7 @@
    border-radius: 4px;
    overflow: hidden;
    text-align: left;
+
    &__picture {
       height: 255px;
       position: relative;
@@ -13,6 +14,8 @@
          object-fit: cover;
          height: 100%;
          width: 100%;
+
+         transition: all 0.2s ease-in-out;
       }
       &::before {
          content: '';

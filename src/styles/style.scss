@@ -56,7 +56,11 @@ body.lock {
       font-weight: 400;
       font-size: 16px;
       line-height: 28px;
-      color: #fff;
+   }
+
+   &--message {
+      padding: 16px 32px;
+      background-color: $secondary;
    }
 }
 

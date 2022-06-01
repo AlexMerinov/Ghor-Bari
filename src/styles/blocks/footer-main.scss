@@ -7,6 +7,21 @@
       &__logo {
          display: block;
          margin-bottom: 16px;
+
+         .icon {
+            width: 214px;
+            height: 57px;
+            color: $primary;
+            fill: $text;
+            transition: all 0.2s linear;
+
+            &:hover {
+               color: $text;
+               fill: $primary;
+               filter: drop-shadow(2px 2px 2px #7b7b7b);
+            }
+         }
+
       }
 
       &__nav {
@@ -179,10 +194,13 @@
             line-height: 40px;
             color: $text;
 
-            transition: color 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
 
             &:hover {
                color: $primary;
+               position: relative;
+               padding-left: 5px;
+               
             }
          }
       }

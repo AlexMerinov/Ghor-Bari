@@ -167,6 +167,10 @@ button {
    width: 16.6666666667%;
 }
 
+.cols-9 {
+   width: 50%;
+}
+
 @media screen and (min-width: 576px) {
    .row-cols-sm-1 > * {
        width: 100%;
@@ -284,6 +288,10 @@ button {
 
    .cols-md-8 {
       width: 16.6666666667%;
+   }
+
+   .cols-md-9 {
+      width: 50%;
    }
 }
 

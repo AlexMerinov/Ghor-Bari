@@ -2,11 +2,16 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   &__wrapper {
+      margin-top: -20px;
+   }
 }
 
-.agent > * + * {
+.agent__wrapper > * {
    margin-top: 20px;
 }
+
+
 
 .card-agent {
    display: flex;
@@ -45,6 +50,12 @@
       color: $title;
       margin-bottom: 4px;
       text-align: center;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+         color: $primary;
+         text-shadow: 1px 1px 5px $heading;
+      }
    }
 
    &__desc {

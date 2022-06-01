@@ -10,6 +10,13 @@
    &__logo {
       width: 148px;
       height: 40px;
+
+      transition: all 0.2s linear;
+
+      &:hover {
+         filter: drop-shadow( 2px 2px 2px $text-second);
+         transform: scale(1.01);
+      }
    }
 }
 

@@ -21,15 +21,15 @@
 
 <!-- Page -->
 <div class="page">
-  <div class="page__archive archive">
+  <div class="page__details details">
     <!-- Header -->
-    <div class="page__header header">
+    <div class="details__header header">
       <div class="header-top"></div>
       <div class="header-bootm">
         <div class="container">
           <div class="header-bottom__wrapper">
-            <a href="#" class="header-bottom__logo">
-              <img src="images/Logo.png" alt="no-logo" />
+            <a href="index.html" class="header-bottom__logo">
+              <img src="images/Logo-second-page.png" alt="no-logo" />
             </a>
             <nav class="header-bottom__nav nav">
               <ul class="nav__list">
@@ -67,17 +67,179 @@
     <!-- / Header -->
 
     <!-- Main -->
-    <main class="page__block archive">
+    <main class="page__block agent-details">
       <section
         class="archive__block dream dream--secondary"
         style="background: url(images/Property_bg.jpg) center / cover no-repeat"
       >
         <div class="container">
           <div class="dream__wrapper">
-            <h1 class="title title--main">Property Listing</h1>
+            <h1 class="title title--main">Agents Details</h1>
           </div>
         </div>
       </section>
+
+      <div class="details-card">
+        <div class="container">
+          <div class="details-card__wrapper">
+            <div class="details-card__single single">
+              <div class="single__info info">
+                <picture class="info__photo">
+                  <img src="images/agent/agentr_1.png" alt="no-image" />
+                  <ul class="info-social">
+                    <li class="info-social__item">
+                      <a href="#" class="info-social__link">
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#inst"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="info-social__item">
+                      <a href="#" class="info-social__link">
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#li-in"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="info-social__item">
+                      <a href="#" class="info-social__link">
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#skype"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </picture>
+                <div class="info-details">
+                  <div class="info-details__name">Kristin Watson</div>
+                  <span class="info-details__spec">Designation</span>
+                  <ul class="contact-list">
+                    <li class="contact-list__item">
+                      <svg class="icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#phone"></use>
+                      </svg>
+                      <a href="tel:+123456789000" class="contact-list__link"
+                        >+123 456 789 000</a
+                      >
+                    </li>
+                    <li class="contact-list__item">
+                      <svg class="icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#tm"></use>
+                      </svg>
+                      <a href="#" class="contact-list__link">mail.urmail.com</a>
+                    </li>
+                    <li class="contact-list__item">
+                      <svg class="icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#ws"></use>
+                      </svg>
+                      <a href="#" class="contact-list__link">+00 123 456 789</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="single__about about">
+                <span class="about__name">About Kristin Watson</span>
+                <div class="about__text">
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour, or randomised words which don't
+                    look even slightly believable.
+                  </p>
+                  <br />
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form by injected humour.
+                  </p>
+                </div>
+              </div>
+              <form action="#" class="single-form">
+                <span class="single-form__title">Contact With Kristin</span>
+                <div class="row single-form__wrapper">
+                  <div class="col cols-1 cols-md-9">
+                    <div class="single-form__field field">
+                      <label for="name" class="field__label">Full Name</label>
+                      <input
+                        class="field__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Type full name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col cols-1 cols-md-9">
+                    <div class="single-form__field field">
+                      <label for="email" class="field__label">Email</label>
+                      <input
+                        class="field__input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Your email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col cols-1">
+                    <div class="single-form__field field">
+                      <label for="Subject" class="field__label">Subject</label>
+                      <input
+                        class="field__input"
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        placeholder="Type subject"
+                      />
+                    </div>
+                  </div>
+                  <div class="col cols-1">
+                    <div class="single-form__field field">
+                      <label for="message" class="field__label">Message</label>
+                      <textarea
+                        class="field__input field__input--text"
+                        name="message"
+                        id="message"
+                        placeholder="Type message"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn--message">
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <aside class="aside">
+              <form action="#" class="aside__aside-form aside-form">
+                <div class="aside-form__title">Search Property</div>
+                <input
+                  class="aside-form__input"
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Search"
+                />
+              </form>
+              <div class="aside-baner">
+                <div class="aside-baner__title">
+                  Find The Best Property For Rent Or Buy
+                </div>
+                <span class="aside-baner__desc">Call Us Now</span>
+                <a href="tel:+00123456789" class="aside-baner__link"
+                  >+00 123 456 789</a
+                >
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- / Main -->
 
@@ -141,23 +303,25 @@
           </nav>
           <div class="col columns">
             <div class="columns__title">Follow Instagram</div>
-            <div class="columns__block">
-              <div class="columns__item">
+            <div
+              class="row row-cols-3 row-cols-md-6 row-cols-lg-3 columns__block"
+            >
+              <div class="col columns__item">
                 <img src="images/footer/footer-card_1.png" alt="no-image" />
               </div>
-              <div class="columns__item">
+              <div class="col columns__item">
                 <img src="images/footer/footer-card_2.png" alt="no-image" />
               </div>
-              <div class="columns__item">
+              <div class="col columns__item">
                 <img src="images/footer/footer-card_3.png" alt="no-image" />
               </div>
-              <div class="columns__item">
+              <div class="col columns__item">
                 <img src="images/footer/footer-card_4.png" alt="no-image" />
               </div>
-              <div class="columns__item">
+              <div class="col columns__item">
                 <img src="images/footer/footer-card_5.png" alt="no-image" />
               </div>
-              <div class="columns__item">
+              <div class="col columns__item">
                 <img src="images/footer/footer-card_6.png" alt="no-image" />
               </div>
             </div>
