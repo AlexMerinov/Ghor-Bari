@@ -5,11 +5,22 @@
    &__top {
       padding-bottom: 108px;
       border-bottom: 1px solid #33628D;
+
    }
    &__bottom {
       padding: 30px 0;
       text-align: center;
       color: #D5E0EA;
+   }
+
+   &__logo {
+      color: #fff;
+      fill: #fff;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+         filter: drop-shadow(5px 5px 3px $heading);
+      }
    }
 
    .columns {
@@ -29,7 +40,7 @@
 
       &__wrapper {
          display: flex;
-         gap: 47px;
+         gap: 20px;
       }
 
       &__block {
@@ -59,7 +70,7 @@
    }
 
    .footer-nav-list {
-      min-height: 200px;
+      flex: 1 1 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -108,4 +119,12 @@
         fill: #fff;
      }
    }
+
+   @media screen and (min-width: 1200px) {
+      padding-top: 70px;
+   } 
+
+   @media screen and (min-width: 768px) {
+      padding-top: 30px;
+   } 
 }

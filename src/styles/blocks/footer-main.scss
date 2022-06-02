@@ -115,6 +115,7 @@
                width: 24px;
                height: 24px;
                fill: #fff;
+               pointer-events: none;
                &--pin {
                   width: 19px;
                }
@@ -205,6 +206,10 @@
          }
       }
 
+      @media screen and (max-width: 1200px) {
+         padding: 50px 0;
+      }
+
    }
 
    &-midle {
@@ -215,8 +220,8 @@
          display: flex;
          align-items: center;
          justify-content: end;
-         flex-wrap: wrap;
-         gap: 52px;
+         flex-wrap: nowrap;
+         gap: 30px;
 
          &__item {
             width: 120px;
@@ -236,6 +241,18 @@
                object-fit: cover;
             }
          }
+
+         @media screen and (max-width: 1200px) {
+            justify-content: space-between;
+         }
+      }
+
+      @media screen and (max-width: 1200px) {
+         padding-bottom: 50px;
+      }
+
+      @media screen and (max-width: 768px) {
+         padding: 30px 0;
       }
    }
 

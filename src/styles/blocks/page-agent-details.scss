@@ -1,3 +1,17 @@
+.agent-details {
+   &__details-card {
+      margin-bottom: 120px;
+
+      @media screen and (max-width: 1200px) {
+         margin-bottom: 80px;
+      }
+
+      @media screen and (max-width: 768px) {
+         margin-bottom: 50px;
+      }
+   }
+}
+
 .details {
    .nav {
       &__link {
@@ -24,6 +38,22 @@
             border: 1px solid $secondary;
          }
       }
+   }
+
+   &__company {
+      padding: 120px 0;
+
+      @media screen and (max-width: 1200px) {
+         padding: 80px 0;
+      }
+
+      @media screen and (max-width: 768px) {
+         padding: 50px 0;
+      }
+   }
+
+   &__footer {
+      background-color: $bg;
    }
 }
 
@@ -444,5 +474,62 @@
 
    @media screen and (max-width: 1200px) {
       display: none;
+   }
+}
+
+.social-active {
+   padding: 80px 0;
+   background-color: $secondary;
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      color: #fff;
+      text-align: center;
+   }
+
+   &__picture {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 768px) {
+         width: 30px;
+         height: 30px;
+         margin-bottom: 10px;
+      }
+   }
+
+   &__count {
+      display: block;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 1.5;
+      margin-bottom: 2px;
+
+      @media screen and (max-width: 768px) {
+         font-size: 24px;
+      }
+   }
+
+   &__desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+
+      @media screen and (max-width: 768px) {
+         font-size: 14px;
+      }
+   }
+
+   @media screen and (max-width: 1200px) {
+      padding: 60px 0;
+   }
+
+   @media screen and (max-width: 768px) {
+      padding: 40px 0;
    }
 }
