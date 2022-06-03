@@ -342,7 +342,11 @@
             line-height: 1.5;
             color: $text-second;
 
-
+            transition: all 0.2s ease-in-out; 
+            
+            &:hover {
+               border-color: $secondary;
+            }
             &--text {
                width: 100%;
                min-height: 100px;

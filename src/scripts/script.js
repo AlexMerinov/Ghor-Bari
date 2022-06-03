@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       openPopupButtons.forEach((openPopupButton) => {
           openPopupButton.addEventListener('click', (event) => {
 
+            disableScroll();
               event.preventDefault();
               const popupName = event.target.dataset.openPopup;
               const popups = document.querySelectorAll('.popup');
@@ -94,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       closePopupButtons.forEach((closePopupButton) => {
          closePopupButton.addEventListener('click', (event) => {
                event.preventDefault();
+               enableScroll();
                closeAllPopups();
          });
       });
@@ -107,7 +109,8 @@ const popups = document.querySelectorAll('.popup');
 if (popups) {
     popups.forEach((popup) => {
         popup.addEventListener('mousedown', (event) => {
-            if (!event.target.closest('.popup__window')) {
+            if (!event.target.closest('.popup__modal')) {
+               enableScroll();
                event.preventDefault();
                closeAllPopups();
             }
@@ -119,7 +122,37 @@ if (popups) {
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'Escape') {
+         enableScroll();
          event.preventDefault();
          closeAllPopups();
     }
 });
+
+
+
+
+
+// disable Scroll
+
+const fixBlocks = document.querySelectorAll('.fix-block');
+
+const disableScroll = function () {
+   let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
+   document.body.classList.add('disable--scroll');
+   fixBlocks.forEach((el) => {
+      el.style.paddingRight = paddingOffset;
+   });
+   document.body.style.paddingRight = paddingOffset;
+};
+
+const enableScroll = function () {
+   document.body.classList.remove('disable--scroll');
+   fixBlocks.forEach((el) => {
+      el.style.paddingRight = '0px';
+   });
+   document.body.style.paddingRight = '0px';
+};
+
+
+   // ----------------------------mask---------------------------------------
+
