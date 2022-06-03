@@ -14,22 +14,19 @@ body.lock {
 
    @media screen and (min-width: 567px) {
       &__block {
-         margin-bottom: 80px;
-         
+         margin-bottom: 80px;       
       }
    }
 
    @media screen and (min-width: 768px) {
       &__block {
-         margin-bottom: 100px;
-         
+         margin-bottom: 100px;    
       }
    }
 
    @media screen and (min-width: 1200px) {
       &__block {
-         margin-bottom: 120px;
-         
+         margin-bottom: 120px;    
       }
    }
 }
